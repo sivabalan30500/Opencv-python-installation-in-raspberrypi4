@@ -1,8 +1,8 @@
-In this tutorial We will learn to setup OpenCV-Python in Ubuntu System. Below steps are tested for Ubuntu 16.04 and 18.04 (both 64-bit).
+In this tutorial We will learn to setup OpenCV-Python in Raspberrypi4 (64-bit).
 
-OpenCV-Python can be installed in Ubuntu in two ways:
+OpenCV-Python can be installed in two ways:
 
-Install from pre-built binaries available in Ubuntu repositories
+Install from pre-built binaries available in repositories
 Compile from the source. In this section, we will see both.
 Another important thing is the additional libraries required. OpenCV-Python requires only Numpy (in addition to other dependencies, which we will see later). But in this tutorials, we also use Matplotlib for some easy and nice plotting purposes (which I feel much better compared to OpenCV). Matplotlib is optional, but highly recommended. Similarly we will also see IPython, an Interactive Python Terminal, which is also highly recommended.
 
@@ -16,6 +16,7 @@ Open Python IDLE (or IPython) and type following codes in Python terminal.
 
 import cv2 as cv
 print(cv.__version__)
+
 If the results are printed out without any errors, congratulations !!! You have installed OpenCV-Python successfully.
 
 It is quite easy. But there is a problem with this. Apt repositories may not contain the latest version of OpenCV always. For example, at the time of writing this tutorial, apt repository contains 2.4.8 while latest OpenCV version is 3.x. With respect to Python API, latest version will always contain much better support and latest bug fixes.
@@ -69,6 +70,7 @@ It will create a folder "opencv" in current directory. The cloning may take some
 
 Now open a terminal window and navigate to the downloaded "opencv" folder. Create a new "build" folder and navigate to it.
 
+$ cd opencv/
 $ mkdir build
 $ cd build
 Configuring and Installing
